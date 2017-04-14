@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 
-import random
-from world import gen_nodes
+# Implementation that generates a random "map" and then uses q learning
+# to find the most efficient route through it given any starting node
+
 import pprint
+import random
 from operator import itemgetter
+from world import gen_nodes
 
 pp = pprint.PrettyPrinter(width=200)
 
 GAMMA = .8
-NODE_COUNT = 50
+NODE_COUNT = 15
 
 
 class WorldLearner:

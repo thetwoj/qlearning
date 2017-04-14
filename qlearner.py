@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
+# Basic static q learning implementation gleaned from tutorials
+
 import random
-from pprint import pprint
 from operator import itemgetter
+from pprint import pprint
 
 r = [
     [-1, -1, -1, -1,  0,  -1],
